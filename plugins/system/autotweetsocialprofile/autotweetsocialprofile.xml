@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>System - AutoTweet Social Profile Links for Google</name>
+	<creationDate>January 2015</creationDate>
+
+	<author>Extly.com</author>
+	<authorEmail>support@extly.com</authorEmail>
+	<authorUrl>http://www.extly.com</authorUrl>
+	<copyright>Prieco S.A.</copyright>
+	<license>GNU/GPLv3 www.gnu.org/licenses/gpl-3.0.html</license>
+	<version>7.9.6</version>
+
+	<description>PLG_AUTOTWEETSOCIALPROFILE_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="autotweetsocialprofile">autotweetsocialprofile.php</filename>
+		<filename>index.html</filename>
+	</files>
+	
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_system_autotweetsocialprofile.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_autotweetsocialprofile.sys.ini</language>
+	</languages>	
+
+	<config>
+		<fields name="params">
+
+			<fieldset name="basic">
+
+				<field name="type" type="list" default="Organization"
+					label="PLG_AUTOTWEETSOCIALPROFILE_TYPE_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_TYPE_DESC">
+					<option value="Organization">Organization</option>
+					<option value="Person">Person</option>
+				</field>
+
+				<field name="name" type="text" default=""
+					label="PLG_AUTOTWEETSOCIALPROFILE_NAME_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_NAME_DESC" />
+
+				<field name="url" type="text" default=""
+					label="PLG_AUTOTWEETSOCIALPROFILE_URL_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_URL_DESC" />
+
+				<field name="sameAsFacebook" type="text" default=""
+					label="PLG_AUTOTWEETSOCIALPROFILE_FACEBOOK_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_FACEBOOK_DESC" />
+
+				<field name="sameAsTwitter" type="text" default=""
+					label="PLG_AUTOTWEETSOCIALPROFILE_TWITTER_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_TWITTER_DESC" />
+
+				<field name="sameAsGPlus" type="text" default=""
+					label="PLG_AUTOTWEETSOCIALPROFILE_GPLUS_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_GPLUS_DESC" />
+
+				<field name="sameAsInstagram" type="text" default=""
+					label="PLG_AUTOTWEETSOCIALPROFILE_INSTAGRAM_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_INSTAGRAM_DESC" />
+
+				<field name="sameAsYoutube" type="text" default=""
+					label="PLG_AUTOTWEETSOCIALPROFILE_YOUTUBE_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_YOUTUBE_DESC" />
+
+				<field name="sameAsLinkedIn" type="text" default=""
+					label="PLG_AUTOTWEETSOCIALPROFILE_LINKEDIN_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_LINKEDIN_DESC" />
+
+				<field name="sameAsMyspace" type="text" default=""
+					label="PLG_AUTOTWEETSOCIALPROFILE_MYSPACE_LABEL" description="PLG_AUTOTWEETSOCIALPROFILE_MYSPACE_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>

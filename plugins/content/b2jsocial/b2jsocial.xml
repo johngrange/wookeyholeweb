@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="content" method="upgrade">
+	<name>B2J Social Sharer</name>
+	<author>Bang2Joom</author>
+	<creationDate>September 2013</creationDate>
+    <author>Bang2Joom</author>
+    <copyright>Copyright 2012 Bang2Joom. All rights reserved.</copyright>
+	<license>GPL License</license>
+    <authorEmail>info@bang2joom.com</authorEmail>
+    <authorUrl>http://www.bang2joom.com</authorUrl>
+    <version>3.1</version>
+    <updateservers>
+		<server type="extension"><![CDATA[http://repos.bang2joom.com/plugins/b2jsocial1.xml]]></server>
+	</updateservers>
+	<description>
+	<![CDATA[
+	<div style="width:100%;background:#f0f0f0;position:relative;">
+	<div style="width:131px;height:131px;display:block;position:absolute;float:left;border-right:3px solid white;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIMAAACDCAYAAACunahmAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpFRkNGNkQyRkEzMzRFMjExOTIxRTg0OTA4N0Q5OUI3MCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo4NjlCRjcwRjQyRDMxMUUyODIwQkNBN0I2NzBBMkY1RSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo4NjlCRjcwRTQyRDMxMUUyODIwQkNBN0I2NzBBMkY1RSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkQzQjEwNDA1Q0Q0MkUyMTFCMDFCRDUzNzA4REE3OUMyIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkVGQ0Y2RDJGQTMzNEUyMTE5MjFFODQ5MDg3RDk5QjcwIi8+IDwvcmRmOkRlc2NyaXB0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) #e0e0e0;"></div>
+	<div style="height:131px;" id="b2j_update_spot">
+        <span style="position:relative;display:block;font-size:32px;line-height:32px;padding-top:10px;padding-left:141px;font-family:Arial;color:#5c5c5c;text-align:left">Bang2Joom Social Sharer</span>
+        <span style="position:relative;display:block;font-size:20px;padding:10px;padding-left:141px;font-family:Arial;color:#5c5c5c;text-align:left;"><a style="color:#5c5c5c;" target="_blank" href="http://www.bang2joom.com">www.bang2joom.com</a></span>
+        
+        <div class="b2j-donation" style="position: relative;
+                                            display: block;
+                                            padding-left: 136px;
+                                            font-family: Arial;
+                                            color: #5C5C5C;
+                                            float: left;">
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LALM7FWPENP3N" target="_blank">
+            <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" alt="PayPal - The safer, easier way to pay online!" /></a>
+        </div>
+        <div class="b2j-fb" style="position: relative;
+                                            display: block;
+                                            padding-left: 10px;
+                                            font-family: Arial;
+                                            color: #5C5C5C;
+                                            float: left;">
+            <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=229840827051457";
+            fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+            <div class="fb-like-box" data-href="http://www.facebook.com/bang2joom" data-width="205" data-height="60" data-show-faces="false" data-stream="false" data-header="true"></div>
+        </div>
+
+        <span style="position: relative;
+        display: block;
+        float:left;
+        font-size: 32px;
+        padding-top: 10px;
+        font-family: Arial;
+        color: #5C5C5C;
+        padding-left:10px;
+        white-space: nowrap;"> <a href="https://twitter.com/bang2joom" class="twitter-follow-button" data-show-count="false">Follow @bang2joom</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></span>
+    </div>
+	<div style="text-align:left;clear:both;background:#e0e0e0;border-top: 3px solid white; color:#5c5c5c; padding:20px;">
+		Bang2Joom Social Sharer plugin helps the Joomla! content reach your audience!
+        Bang2Joom Social Sharer Plugin is a Joomla! plugin that displays Facebook, LinkedIn, Twitter, Google+ and E-mail share buttons. Each button in this plugin is super customizable with great parameters to choose!
+	</div>
+    <div style="text-align:left;clear:both;background:#e0e0e0;border-top: 3px solid white; color:#5c5c5c; padding:20px;">
+		The features are as follow – It has many presets. This plugin works for the following components: K2, Joomla! Article manager, redSHOP.  Joomla! user has also a chance to choose ‘All’ option. Bang2Joom Social Sharer plugin comes in 3 size options and has 3 Button Style: icon only, text only and icon & text. It also has 3 alignments to choose: left, center and right.
+        The Share buttons can be located after and/or before the text in the content. Bang2Joom Social Sharer plugin helps the website stay in touch with its visitors allowing them to spread the word quickly thus increasing the traffic load to your website. 
+	</div>
+	<div style="text-align:left;clear:both;background:#e0e0e0;border-top: 3px solid white; color:#777777; padding:20px;">	
+		If you have encountered any problems with the module, you may submit a ticket or ask your questions on our forum.<br>
+		Liked Bang2Joom Social Sharer? Then, please vote for this module on Joomla! Extensions Directory! 
+	</div>
+	</div>
+    ]]>
+	</description>
+	<files>
+		<filename plugin="b2jsocial">b2jsocial.php</filename>
+		<filename>index.html</filename>
+		<folder>language</folder>
+		<folder>admin</folder>
+		<folder>css</folder>
+		<folder>images</folder>
+	</files>
+	<config>
+        <fields name="params">
+            <fieldset name="PLG_B2J_SOCIAL_BASIC">
+                <field type="b2jupdate" addfieldpath="/plugins/content/b2jsocial/admin/elements/"></field>
+                <field name="preset" type="list" default="1" label="PLG_B2J_SOCIAL_PRESET"  description="PLG_B2J_SOCIAL_PRESET_DESC">
+									<option value="7">PLG_B2J_SOCIAL_PRESET_7</option>
+									<option value="1">PLG_B2J_SOCIAL_PRESET_1</option>
+									<option value="2">PLG_B2J_SOCIAL_PRESET_2</option>
+									<option value="3">PLG_B2J_SOCIAL_PRESET_3</option>
+									<option value="4">PLG_B2J_SOCIAL_PRESET_4</option>
+									<option value="5">PLG_B2J_SOCIAL_PRESET_5</option>
+									<option value="6">PLG_B2J_SOCIAL_PRESET_6</option>
+									<option value="8">PLG_B2J_SOCIAL_PRESET_8</option>
+									<option value="9">PLG_B2J_SOCIAL_PRESET_9</option>
+									<option value="10">PLG_B2J_SOCIAL_PRESET_10</option>
+								</field>
+								<field name="share_counts" type="radio" default="0" label="PLG_B2J_SOCIAL_SHARE_COUNTS" description="PLG_B2J_SOCIAL_SHARE_COUNTS_DESC">
+                    <option value="1">PLG_B2J_SOCIAL_ON</option>
+                    <option value="0">PLG_B2J_SOCIAL_OFF</option>
+                </field>
+								<field name="count_color" type="text" default="#666666" class="color" label="PLG_B2J_SOCIAL_COUNTS_COLOR" description="PLG_B2J_SOCIAL_COUNTS_COLOR_DESC" />
+								
+								<field name="include_font" type="radio" default="1" label="PLG_B2J_SOCIAL_INCLUDE_FONT" description="PLG_B2J_SOCIAL_INCLUDE_FONT_DESC">
+                    <option value="1">PLG_B2J_SOCIAL_ON</option>
+                    <option value="0">PLG_B2J_SOCIAL_OFF</option>
+                </field>
+								<field name="background_color" type="text" default="#999999" class="color" label="PLG_B2J_SOCIAL_BACKGROUND_COLOR" description="PLG_B2J_SOCIAL_BACKGROUND_COLOR_DESC" />
+								<field name="icon_color" type="text" default="#ffffff" class="color" label="PLG_B2J_SOCIAL_ICON_COLOR" description="PLG_B2J_SOCIAL_COUNTS_ICON_COLOR_DESC" />
+								<field name="icon_font_size" type="text" default="24" label="PLG_B2J_SOCIAL_ICON_FONT_SIZE" description="PLG_B2J_SOCIAL_COUNTS_ICON_FONT_SIZE_DESC" />
+								
+								<field name="content" type="list" default="all" label="PLG_B2J_SOCIAL_CONTENT"  description="PLG_B2J_SOCIAL_CONTENT_DESC">
+									<option value="k2">PLG_B2J_SOCIAL_K2</option>
+									<option value="article">PLG_B2J_SOCIAL_JOOMLA</option>
+									<option value="rs">PLG_B2J_SOCIAL_REDSHOP</option>
+									<option value="all">PLG_B2J_SOCIAL_ALL</option>
+								</field>
+                <field name="k2_filter" type="radio" default="1" label="PLG_B2J_SOCIAL_K2_FILTER" description="PLG_B2J_SOCIAL_K2_FILTER_DESC">
+                    <option value="1">PLG_B2J_SOCIAL_ALL</option>
+                    <option value="0">PLG_B2J_SOCIAL_SELECT</option>
+                </field>
+                <field name="k2_categories" type="categoriesmultiple" default="" label="PLG_B2J_SOCIAL_SELECT_ONE_OR_MORE_CATEGORIES" description="PLG_B2J_SOCIAL_SELECT_ONE_OR_MORE_CATEGORIES_DESC" addfieldpath="/administrator/components/com_k2/elements/" />
+                <field name="article_filter" type="radio" default="1" label="PLG_B2J_SOCIAL_ARTICLE_FILTER" description="PLG_B2J_SOCIAL_ARTICLE_FILTER_DESC">
+                    <option value="1">PLG_B2J_SOCIAL_ALL</option>
+                    <option value="0">PLG_B2J_SOCIAL_SELECT</option>
+                </field>
+                <field name="joomla_categories" multiple="true" type="category" default="" extension="com_content" label="PLG_B2J_SOCIAL_SELECT_ONE_OR_MORE_CATEGORIES_JOOMLA" description="PLG_B2J_SOCIAL_SELECT_ONE_OR_MORE_CATEGORIES_JOOMLA_DESC" addfieldpath="/libraries/joomla/form/fields/" />
+                <field name="include_in_categories" type="radio" default="0" label="PLG_B2J_SOCIAL_INCLUDE_IN_CATEGORIES" description="PLG_B2J_SOCIAL_INCLUDE_IN_CATEGORIES_DESC">
+                    <option value="1">PLG_B2J_SOCIAL_ON</option>
+                    <option value="0">PLG_B2J_SOCIAL_OFF</option>
+                </field>
+                <field name="buttons" type="list" default="icons" label="PLG_B2J_SOCIAL_BUTTONS"  description="PLG_B2J_SOCIAL_BUTTONS_DESC">
+									<option value="icons">PLG_B2J_SOCIAL_ICONS</option>
+									<option value="text">PLG_B2J_SOCIAL_TEXT</option>
+									<option value="both">PLG_B2J_SOCIAL_ICONS_TEXT</option>
+								</field>
+								<field name="icon_size" type="list" default="32" label="PLG_B2J_SOCIAL_ICON_SIZE"  description="PLG_B2J_SOCIAL_ICON_SIZE_DESC">
+									<option value="16">PLG_B2J_SOCIAL_ICON_SIZE_16</option>
+									<option value="32">PLG_B2J_SOCIAL_ICON_SIZE_32</option>
+									<option value="64">PLG_B2J_SOCIAL_ICON_SIZE_64</option>
+								</field>
+								<field name="position" type="list" default="after" label="PLG_B2J_SOCIAL_POSITION"  description="PLG_B2J_SOCIAL_POSITION_DESC">
+									<option value="after">PLG_B2J_SOCIAL_AFTER_CONTENT</option>
+									<option value="before">PLG_B2J_SOCIAL_BEFORE_CONTENT</option>
+									<option value="both">PLG_B2J_SOCIAL_AFTER_BEFORE_CONTENT</option>
+								</field>
+								<field name="align" type="list" default="left" label="PLG_B2J_SOCIAL_ALIGN"  description="PLG_B2J_SOCIAL_ALIGN_DESC">
+									<option value="left">PLG_B2J_SOCIAL_LEFT</option>
+									<option value="center">PLG_B2J_SOCIAL_CENTER</option>
+									<option value="right">PLG_B2J_SOCIAL_RIGHT</option>
+								</field>
+                
+                <field name="f_og" type="radio" default="1" label="PLG_B2J_SOCIAL_FACEBOOK_OG"  description="PLG_B2J_SOCIAL_FACEBOOK_OG_DESC">
+                    <option value="1">PLG_B2J_SOCIAL_ON</option>
+                    <option value="0">PLG_B2J_SOCIAL_OFF</option>
+                </field>
+                <field name="t_name" type="text" default="bang2joom" label="PLG_B2J_SOCIAL_TWITTER_NAME"  description="PLG_B2J_SOCIAL_TWITTER_NAME_DESC" />
+                
+                <field type="spacer" name="item_priority_" class="text" label="PLG_B2J_SOCIAL_ITEM_PRIORITY" description="PLG_B2J_SOCIAL_ITEM_PRIORITY_DESC" />
+                
+								<field name="f_pos" default="1" type="hidden" label=""></field>
+                <field name="t_pos" default="2" type="hidden" label=""></field>
+								<field name="g_pos" default="3" type="hidden" label=""></field>
+								<field name="l_pos" default="4" type="hidden" label=""></field>
+                <field name="p_pos" default="5" type="hidden" label=""></field>
+								<field name="e_pos" default="6" type="hidden" label=""></field>
+                <field name="f" type="radio" default="1" class="pos_field" label="PLG_B2J_SOCIAL_FACEBOOK">
+                    <option value="1">PLG_B2J_SOCIAL_ON</option>
+                    <option value="0">PLG_B2J_SOCIAL_OFF</option>
+                </field>
+									<field name="t" type="radio" default="1" class="pos_field" label="PLG_B2J_SOCIAL_TWITTER">
+                    <option value="1">PLG_B2J_SOCIAL_ON</option>
+                    <option value="0">PLG_B2J_SOCIAL_OFF</option>
+                </field>
+								<field name="g" type="radio" default="1" class="pos_field" label="PLG_B2J_SOCIAL_GOOGLE">
+                    <option value="1">PLG_B2J_SOCIAL_ON</option>
+                    <option value="0">PLG_B2J_SOCIAL_OFF</option>
+                </field>
+								<field name="l" type="radio" default="1" class="pos_field" label="PLG_B2J_SOCIAL_LINKEDIN">
+                    <option value="1">PLG_B2J_SOCIAL_ON</option>
+                    <option value="0">PLG_B2J_SOCIAL_OFF</option>
+                </field>
+                <field name="p" type="radio" default="1" class="pos_field" label="PLG_B2J_SOCIAL_PINTEREST">
+                    <option value="1">PLG_B2J_SOCIAL_ON</option>
+                    <option value="0">PLG_B2J_SOCIAL_OFF</option>
+                </field>
+								<field name="e" type="radio" default="1" class="pos_field" label="PLG_B2J_SOCIAL_EMAIL">
+                    <option value="1">PLG_B2J_SOCIAL_ON</option>
+                    <option value="0">PLG_B2J_SOCIAL_OFF</option>
+                </field>
+								<field type="b2jhidden" addfieldpath="/plugins/content/b2jsocial/admin/elements/"></field>
+						</fieldset>
+        </fields>	
+	</config>
+</extension>

@@ -1,0 +1,5 @@
+/**
+ * @license Copyright (c) 2003-2013, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md or http://ckeditor.com/license
+ */
+CKEDITOR.plugins.add("preloader",{init:function(n){n.on("preloader",function(t){var u=t.data,r=u.parent||this.editable(),f=u.url||n.config.baseHref+"layouts/joomla/arkeditor/images/712.gif",i=CKEDITOR.dom.element.createFromHtml('<div class="preloader" style="position:absolute;top:0px;left:0px;background-color:#fff;opacity:0.7;"><span style="display:inline-block;height:100%;width:1px;vertical-align: middle;"><\/span><img style="vertical-align: middle;" src="'+CKEDITOR.getUrl(this.config.baseHref+"layouts/joomla/arkeditor/images/712.gif")+'"/><\/div>');i.setStyle("display","table-cell");i.setStyle("text-align","center");i.setStyle("vertical-align","middle");i.setSize("width",r.getSize("width"));setTimeout(function(){i.setSize("height",r.getSize("height"))},50);i.appendTo(r)});n.on("afterPreloader",function(n){var i=n.data,r=i.parent||this.editable(),t=r.getFirst(function(n){return n.hasClass("preloader")});t&&t.remove()})}})

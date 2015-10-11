@@ -1,0 +1,245 @@
+// Menu CSS base : LTR Menu Style
+// --------------------------------------------------
+
+// Root ul element
+#yt_menuposition{
+   
+    /*------------------
+     CSS Menu & Moo Menu
+    -------------------*/
+    ul.navi {margin: 0 ;padding: 0;list-style: none;
+        li.level1 {float: left;position: relative;padding: 0;margin: 0px 0px 0 0;padding: 0 0 0 0px;
+            position: relative; border-left-width: 1px;border-left-style: solid; border-left-color: rgba(255,255,255,0.3);
+            &.first { border:none; margin: 0px;}
+            &.last {}
+            > .item-link{color:#fff; text-transform: uppercase;}
+            .item-link {margin: 0 ;line-height: 20px;padding: 10px 15px ;font-size:116.7%;  display: block;}
+            .menu-title {display: inline-block;}
+            
+            // Add description and show icons
+            .showdesc{text-align: center;
+                span.menu-title{line-height: 100%;padding-bottom: 5px;display: block;}
+                span.menu-desc{display: block;font-size: 11px;color: #ccc;line-height: 100%;}
+            }
+            
+            //Hover and Active (:hover of cssmenu, .hover of moomenu)
+            &.active.first { padding: 0px;}
+            &:hover > .item-link, &.hover > .item-link{background: @backgroundSubnav1; color: #fff;}
+            &.active > .item-link{#gradient .vertical(#fdfdfd, #e8e7e7);background-color: transparent;}
+            &:hover ul.level2 ,&.hover ul.level2 {left: 0;}
+            &.active .item-link{ color: @linkColor;}
+        }
+        
+        // Show All Submenu
+        // Menu level2
+        ul {left: -999em;position: absolute;z-index: 15;margin: 0;padding: 0;list-style: none;width: 200px;}
+        ul.level2 { background: #ffffff; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); padding: 15px 0 20px;
+            border-bottom: 5px solid @backgroundSubnav1; border-top: 5px solid @backgroundSubnav1;
+            li {border-bottom:1px dashed #d6d6d6;position: relative; margin: 0 15px;
+                &.first{border-top: none;}
+                .item-link {margin: 0;padding: 8px 0px; color: @linkColor; color:#000000 ; font-size: 100%;text-transform: none;line-height: 20px; 
+                    //&.havechild:after{font-family: 'FontAwesome';content: "\f0da";font-size: 14px;float: right;}
+                    .menu-title {display: inline-block;}    
+                }
+                
+                // Add description and show icons
+                .showdesc{text-align: left;
+                    span.menu-title{padding-bottom: 5px;}
+                    span.menu-desc{font-family: "arial";padding-bottom: 3px;}
+                }
+                
+                // Hover and Active menu
+                &:hover,&.hover,&.active{
+                    .level2{ color: @linkColorHover;}
+                }
+                
+                &:hover ul.level3,
+                li.level3:hover ul.level4,
+                li.level4:hover ul.level5{left: 98%;top:5px;}
+            }
+            // Menu level3, level4 & level5
+            ul{box-shadow: 0 0 3px rgba(0, 0, 0, 0.4); background-color: #fff; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); padding: 20px 0;                        
+                border-bottom: 5px solid @backgroundSubnav1; border-top: 5px solid @backgroundSubnav1;}
+            ul.level3 li { 
+                .item-link{font-size: 100%; padding: 8px 0px; color: @linkColor; text-transform: none; }
+                
+                // Hover and Active menu
+                &:hover,&.hover,&.active{
+                    > .item-link{color: @linkColorHover; }
+                }
+            }
+        }
+    }
+    
+    /*------------------
+    Dropline Menu
+    -------------------*/
+    #droplinenavigator{position: relative;
+        li.level1{position: static;}
+        ul.level2{margin: 0;width: 980px;height: 40px; border: none; padding: 0px; background: #e8e7e7;.box-shadow(none);
+            li.level2{float: left;border: none; margin: 0 2px;
+                a.level2 {padding: 10px 7px; text-transform: uppercase; font-size: 91.7%;
+                    &.havechild:after{content: "";display: none;}
+                }
+                &:hover{position: relative;
+                    ul.level3{left: 0;top: 100%; background-color: #fff; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); padding: 20px 0;                        
+                        border-bottom: 5px solid @backgroundSubnav1; border-top: 5px solid @backgroundSubnav1;
+                    }
+                }
+            }
+        }
+    }
+    
+    /*------------------
+    Mega Menu
+    -------------------*/
+    #meganavigator{
+        li.level1{
+            .mega-content{position: absolute;left: -999em;z-index: 15;
+                background: #fff url("../images/bg-bottom-user.png") repeat-x scroll left bottom;
+                .box-shadow(1px 1px 2px rgba(0, 0, 0, 0.8)); padding: 10px 0 20px;
+                //.box-shadow(~"1px 1px 2px rgba(0, 0, 0, 0.8), 0 -6px 5px rgba(0, 0, 0, 0.2) inset");
+                border-bottom: 5px solid @backgroundSubnav1; border-top: 5px solid @backgroundSubnav1;
+                
+                //Mega colums
+                .mega-col {float: left; 
+
+                    /*ul.subnavi{ border:none; padding: 0px; 
+                     li{border-bottom:1px dashed #d6d6d6; border-top: none; margin: 0 0px;
+                         &.first{}
+                         &:hover > .item-link, &.hover > .item-link, &.active > .item-link{color: @linkColorHover;}          
+                         .item-link{margin: 0;padding: 8px 0px; color: @linkColor; font-size: 100%;text-transform: none;line-height: 20px; }
+                        }
+                    }*/
+
+                    &.one {
+                        div.mega-module{padding: 10px 15px;overflow: hidden;}
+                        ul.subnavi{padding:0px; border:none; 
+                            li{ margin: 0 15px;}
+                        }
+                    }
+                    &.more{padding: 0 15px;.box-sizing(border-box);
+                        > ul.subnavi{box-shadow: none; width:auto; padding: 0 -15px; 
+                                li{ margin: 0 15px;}
+                            }
+                    }
+                    &.more.first{//padding-left: 10px;
+                        .mega-group div.mega-group-title{/*margin-left: -10px;*/}
+                    }
+                    &.more.last{//padding-right: 10px;
+                        .mega-group div.mega-group-title{/*margin-right: -10px;*/}
+                    }
+                    
+                    //Mega Item
+                    .mega-group {display: block;
+                        div.mega-group-title{border: 0px ;border-bottom: 1px dashed #d6d6d6; margin: 0 0px;
+                            .item-link{color: @black;font-size: 116.7%;padding: 0px; margin: 0px; //min-height: 36px;
+                                .menu-title{padding:10px  0;line-height: 100%;text-transform: uppercase;}
+                                &:hover{ color: @linkColorHover;}
+                            }
+                            .showdesc{
+                                .menu-title{padding: 0 0 5px;}
+                                .menu-desc{font-family: "arial";}
+                            }
+                        }
+                        div.mega-group-content{position: relative;
+                            ul.subnavi{ max-width: 100% !important;
+                                li{border-bottom:1px dashed #d6d6d6; border-top: none; margin: 0 0px;
+                                 &.havechild{ position: relative;}
+                                 &.first{}
+                                 &:hover > .item-link, &.hover > .item-link, &.active > .item-link{color: @linkColorHover;}          
+                                 .item-link{margin: 0;padding: 8px 0px; color: @linkColor; font-size: 100%;text-transform: none;line-height: 20px; }
+                                }
+                            }
+                            .mega-col.one ul.subnavi li{ margin: 0 15px;}
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    
+    
+}
+
+//
+// Menu CSS base : RTL Menu Style
+// --------------------------------------------------
+.rtl{
+    #yt_menuposition{
+        /*------------------
+        CSS Menu & Moo Menu
+        -------------------*/
+        ul.navirtl{
+            li.level1{float: right;margin: 0 0 0 0px; border-left: none; border-right-width: 1px;border-right-style: solid; border-right-color: rgba(255,255,255,0.3);
+                &:hover ul.level2,&.hover ul.level2{left: auto;right: 0;}
+                &.first{ border:none;}
+            }
+            ul {left: auto;right: -999em;}
+            ul.level2 {
+                li {
+                    .item-link{padding: 8px 0px;
+                        //&.havechild:after{float: left;content: "\f0d9";}
+                    }
+                     // Add description and show icons
+                    .showdesc{text-align: right;}
+                    
+                    // Hover and Active menu
+                    &:hover,&.hover,&.active{
+                        .level2{}
+                    }
+                    &:hover ul.level3,
+                    li.level3:hover ul.level4,
+                    li.level4:hover ul.level5{left: auto;right: 92%;}
+                }
+                
+                // Menu level3, level4 & level5
+                ul.level3 li{
+                    // Hover and Active menu
+                    &:hover,&.hover,&.active{
+                        > .item-link{}
+                    }
+                    .item-link{padding:8px 0;}
+                    
+                }
+            }
+        }
+        
+        /*------------------
+        Dropline Menu
+        -------------------*/
+        #droplinenavigator{
+            ul.level2 li.level2{float: right;
+                &:hover{
+                    ul.level3{left: auto;right: 0;}
+                }
+            }
+        }
+        
+        /*------------------
+        Mega Menu
+        -------------------*/
+        #meganavigator{
+            li.level1{
+                .mega-content{
+                    //Mega colums
+                    .mega-col {float: right;
+                        &.more.first{padding-right: 10px;
+                            .mega-group div.mega-group-title{margin-right: 0px;}
+                        }
+                        &.more.last{padding-left: 10px;
+                            .mega-group div.mega-group-title{margin-left: 0px;}
+                        }
+                        
+                        
+                        //Mega Item
+                        .mega-group {
+                            //div.mega-group-title .item-link{padding: 0 35px 0 0;background-position: 96% 12px;}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

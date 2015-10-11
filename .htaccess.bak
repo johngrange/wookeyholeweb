@@ -1,0 +1,8 @@
+AddHandler application/x-httpd-php53 .php .php5 .php4 .php3
+<IfModule mod_expires.c>
+ExpiresActive On
+<FilesMatch "\.(pdf|flv|jpe?g|png|gif|js|css|swf|cur|ico)$">
+Header set Cache-Control "public"
+ExpiresDefault "access plus 1 month"
+</FilesMatch>
+</IfModule>

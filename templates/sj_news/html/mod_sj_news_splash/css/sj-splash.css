@@ -1,0 +1,191 @@
+.sj-splash{
+	margin:0;
+	padding:0;
+	overflow: hidden;
+}
+
+.sj-splash .spl-title{
+	float:left;
+}
+
+.sj-splash .spl-title .spl-title-inner{
+	font-weight:bold;
+	padding-right:10px;
+}
+
+.sj-splash .spl-items{
+	float:left;
+	width:70%;
+	position: relative;
+}
+
+.sj-splash .spl-items .spl-items-inner{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.sj-splash .spl-items .spl-items-inner  > .item, 
+.sj-splash .spl-items .spl-items-inner .spl-item{
+  position: relative;
+  display: none;
+  -webkit-transition: 0.6s ease-in-out left;
+     -moz-transition: 0.6s ease-in-out left;
+       -o-transition: 0.6s ease-in-out left;
+          transition: 0.6s ease-in-out left;
+}
+
+.sj-splash .spl-items .spl-items-inner > .active,
+.sj-splash .spl-items .spl-items-inner > .next,
+.sj-splash .spl-items .spl-items-inner > .prev {
+  display: block;
+}
+
+.sj-splash .spl-items .spl-items-inner > .active {
+  left: 0;
+}
+
+.sj-splash .spl-items .spl-items-inner > .next,
+.sj-splash .spl-items .spl-items-inner > .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.sj-splash .spl-items .spl-items-inner > .next {
+  left: 100%;
+}
+
+.sj-splash .spl-items .spl-items-inner > .prev {
+  left: -100%;
+}
+
+.sj-splash .spl-items .spl-items-inner > .next.left,
+.sj-splash .spl-items .spl-items-inner > .prev.right {
+  left: 0;
+}
+
+.sj-splash .spl-items .spl-items-inner > .active.left {
+  left: -100%;
+}
+
+.sj-splash .spl-items .spl-items-inner > .active.right {
+  left: 100%;
+}
+
+
+.sj-splash.vertical .spl-items-inner {
+   height: 100%; 
+  width:100%;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.sj-splash.vertical .spl-items .spl-items-inner  > .item,
+.sj-splash.vertical  .spl-items .spl-items-inner .spl-item {
+  -webkit-transition: 0.6s ease-in-out all;
+     -moz-transition: 0.6s ease-in-out all;
+      -ms-transition: 0.6s ease-in-out all;
+       -o-transition: 0.6s ease-in-out all;
+          transition: 0.6s ease-in-out all;
+}
+
+.sj-splash.vertical  .spl-items .spl-items-inner >  .active {
+/*   top: 0; */
+  left: 0;
+  
+
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+
+  
+}
+
+.sj-splash.vertical .spl-items .spl-items-inner >  .next {
+  /* top: 100%; */
+  left: 0;
+  
+
+    transform: translate(0, 100%);
+    -webkit-transform: translate(0px, 100%);
+    -moz-transform: translate(0px, 100%);
+    -o-transform: translate(0px, 100%);
+    -ms-transform: translate(0px, 100%);
+
+  
+}
+
+.sj-splash.vertical .spl-items .spl-items-inner >  .prev {
+/*   top: -100%; */
+  left: 0;
+      transform: translate(0px, -100%);
+    -webkit-transform: translate(0px, -100%);
+    -moz-transform: translate(0px, -100%);
+    -o-transform: translate(0px, -100%);
+    -ms-transform: translate(0px, -100%);
+}
+
+.sj-splash.vertical .spl-items .spl-items-inner .next.left,
+.sj-splash.vertical .spl-items .spl-items-inner .prev.right {
+/*   top: 0; */
+  left: 0;
+  
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+}
+
+.sj-splash.vertical .spl-items .spl-items-inner >  .active.left {
+/*   top: -100%; */
+  left:0;
+        transform: translate(0px, -100%);
+    -webkit-transform: translate(0px, -100%);
+    -moz-transform: translate(0px, -100%);
+    -o-transform: translate(0px, -100%);
+    -ms-transform: translate(0px, -100%); 
+}
+
+.sj-splash.vertical .spl-items .spl-items-inner >  .active.right {
+/*   top: 100%; */
+ 	 left: 0;
+        transform: translate(0px, 100%);
+    -webkit-transform: translate(0px, 100%);
+    -moz-transform: translate(0px, 100%);
+    -o-transform: translate(0px, 100%);
+    -ms-transform: translate(0px, 100%);
+}
+
+
+.sj-splash .spl-control{
+	text-align: right;
+}
+
+.sj-splash .spl-control ul.spl-control-inner{
+	list-style: none outside none;
+	margin:0;
+	padding:0;
+}
+
+.sj-splash .spl-control ul.spl-control-inner li{
+	display: inline-block;
+	margin:0;
+	padding:0;
+	margin-right:5px;
+	cursor:pointer;
+	text-indent: -9999;
+	width:18px;
+	height:9px;
+}
+
+.sj-splash .spl-control ul.spl-control-inner li.control-next{
+	background: url('../images/next.png') no-repeat scroll 0 0 transparent;
+}
+
+.sj-splash .spl-control ul.spl-control-inner li.control-prev{
+	background: url('../images/pre.png') no-repeat scroll 0 0 transparent;
+}

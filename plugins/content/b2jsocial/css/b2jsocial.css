@@ -1,0 +1,168 @@
+
+/* ---------------------------------------------------------------------------------------------------------------------
+ * Bang2Joom Social Plugin for Joomla! 2.5+
+ * ---------------------------------------------------------------------------------------------------------------------
+ * Copyright (C) 2011-2012 Bang2Joom. All Rights Reserved.
+ * @license - GNU/GPL, http://www.gnu.org/licenses/gpl.html
+ * Author: Bang2Joom
+ * Website: http://www.bang2joom.com
+  ----------------------------------------------------------------------------------------------------------------------
+ */
+
+ul.b2jsocial{
+	list-style:none !important;
+	margin:0;
+	padding:0 !important;
+	display:inline-block;
+}
+ul.b2jsocial li{
+	display:inline-block;
+	position:relative;
+	width:70px;
+	height:30px;
+	text-align:left;
+}
+ul.b2jsocial li a{
+	text-decoration: none;
+	display:table-cell;
+	vertical-align:middle;
+	position:relative;
+	width:70px;
+	height:30px;
+}
+ul.b2jsocial li a.preset1{
+    color:#666;
+}
+ul.b2jsocial li a.preset2{
+    color:#fff !important;
+}
+ul.b2jsocial li a.preset3{
+    color:#3b639a;
+}
+ul.b2jsocial li a.preset4{
+    color:#666;
+}
+ul.b2jsocial li a.preset5{
+    color:#111;
+}
+ul.b2jsocial li a.preset6{
+    color:#393939;
+}
+ul.b2jsocial li a.preset8{
+    color:#908977;
+}
+ul.b2jsocial li:hover{
+	opacity:0.9;
+}
+ul.b2jsocial li.preset5:hover{
+	opacity:1;
+}
+ul.b2jsocial li.f.preset2 {
+	background:#607dc2;
+}
+ul.b2jsocial li.t.preset2 {
+	background:#81c6e6;
+}
+ul.b2jsocial li.g.preset2 {
+	background:#e06b5f;
+}
+ul.b2jsocial li.l.preset2 {
+	background:#3b639a;
+}
+ul.b2jsocial li.e.preset2 {
+	background:#f78861;
+}
+ul.b2jsocial li.p.preset2 {
+	background:#d83a3a;
+}
+ul.b2jsocial li.preset10 a:after{
+	font-family:FontAwesome;
+}
+ul.b2jsocial li.f.preset10 a:after {
+	content:'\f09a';
+}
+ul.b2jsocial li.t.preset10 a:after {
+	content:'\f099';
+}
+ul.b2jsocial li.g.preset10 a:after {
+	content:'\f0d5';
+}
+ul.b2jsocial li.l.preset10 a:after {
+	content:'\f0e1';
+}
+ul.b2jsocial li.e.preset10 a:after {
+	content:'\f003';
+}
+ul.b2jsocial li.p.preset10 a:after {
+	content:'\f0d2';
+}
+ul.b2jsocial li span.text {
+	display:none;
+}
+ul.b2jsocial li span.social_count {
+	line-height:17px;
+	display:none;
+	position:absolute;
+	top:50%;
+	border:1px solid #908977;
+	height:17px;
+	padding:0 4px;
+	margin-top:-9px;
+}
+ul.b2jsocial li span.social_count:before{
+	position:absolute;
+	content:'';
+	display:block;
+	top:4px;
+	left:-6px;
+	width: 0;
+	height: 0;
+	border-color: transparent;
+	border-style: solid;
+	border-width: 5px 0 5px 5px;
+	transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+}
+ul.b2jsocial li span.social_count.hide{
+	visibility:hidden;
+}
+ul.b2jsocial li span.background {
+	position:absolute;
+	right:5px;
+	top:5px;
+}
+ul.b2jsocial li.preset7 a{
+	display:inline-block;
+	vertical-align:baseline;
+}
+ul.b2jsocial li.t.preset7 { 
+	width: 85px;
+}
+ul.b2jsocial li.l.preset7 a{
+	vertical-align: inherit;
+}
+ul.b2jsocial li.preset7 { 
+	margin-right: 5px !important;  
+	width: auto;
+}
+ul.b2jsocial li.t.preset7 { 
+	width: 85px;
+}
+ul.b2jsocial li.l.preset7 a{
+	width: auto;
+}
+ul.b2jsocial li.e.preset7 a{ 
+	width: 79px;
+	top:5px;
+}
+ul.b2jsocial li.f.preset7 a{ 
+	width: 79px;
+	top:5px;
+}
+ul.b2jsocial li.f.preset7 iframe{ 
+	max-width: none !important;
+}
+ul.b2jsocial li.f.preset7:hover{
+	opacity: 1 !important;
+} 

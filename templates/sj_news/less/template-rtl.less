@@ -1,0 +1,388 @@
+  
+// Bootstrap mixins
+@import "../asset/bootstrap/less/mixins.less";
+@import "../asset/bootstrap/less/variables.less";
+@import "../asset/bootstrap/less/bootstrap-rtl.less";
+
+.rtl{
+     // 1.SYSTEM TOOL
+     // --------------------------------------------------
+     #yt_tool_bottom .module .btn-special{padding: 0 5px;}
+     .yt-sticky .module .module-inner1 .module-inner2 .module-inner3 h3.modtitle:before{ margin: 0 0 0 10px; float: right;}
+
+     .backtotop i{margin: 8px 0 0;}
+     
+     .pp_default .pp_content_container .pp_content .pp_details .pp_close{ left: 0px; right: auto;}
+     // 2.GRID SYSTEM AND PAGE STRUCTURE 
+     // --------------------------------------------------
+          .row-fluid .first{margin-right: 0;}
+          #top{ }
+     // 3.JOOMLA STYLES
+     // --------------------------------------------------
+     
+     /*GENERIC BASE JOOMLA*/
+     [class^="icon-"], [class*=" icon-"]{}
+     #system-message{
+          .error > ul{margin-right: 0;background-position: 99% center;}
+     }
+     
+     /*GENERIC ARTICLE STYLES*/
+          //List All Categories
+          
+          // Category Blog
+          .blog{
+               .items-leading{
+                    .items-row();
+                    .item .item-image{margin: 0 0 10px 0px;  min-width: auto !important; min-height: auto !important;}
+                    div.item-readmore{ text-align: left;
+                         .readmore{margin-left: 5px; margin-right: 0px;}
+                    }
+               }
+               .items-row{
+                    .item {
+                         .article-text {
+                              .item-headinfo {
+                                   ul.actions{float: left;}
+                                   dl.article-info{//float: right;
+                                        dd .ico-create{margin: 0 0 0 5px;}
+                                   }
+                              }
+                              div.item-readmore{ text-align: left;
+                                   .readmore{margin-left: 5px; margin-right: 0px;}
+                              }
+                         }
+                         .item-image{float: right;margin: 0 0 10px 20px;}
+                    }
+               }
+               .items-more ol li {
+                    a:before{ content: "\f104"; font-size: 11px; font-weight: bold; margin: 0 3px 0 5px; vertical-align: 1px;}
+                    a:hover:before{ margin: 0 6px 0 5px;}
+               }
+          }
+          
+          // Featured Article
+          .blog-featured{
+               .items-leading .item {
+                    .blog .items-row .item();
+               }
+               .items-row  .item {
+                    .blog .items-row .item();
+               }
+          }
+          
+          //Single Article
+          .item-page {
+               .page-header ul.actions{ float: left;
+                    li{margin: 0 10px 0 0px;
+                         i{ margin: 0px 5px 0 5px; }
+                         a{padding: 0 5px 0 10px;  border-right: 1px solid #D5D5D5;  border-left: none;}
+                    }
+               }
+               .article-info {
+                    ul.actions{float: left;}
+                    dl.article-info{float: right;}
+                    dl.article-author dd.createdby{ margin: 0px; text-align: left;}
+               }
+              
+               .img-fulltext-left{float: left;margin: 0 0 1em 1em;}
+               .img-fulltext-right{float: right;margin: 0 1em 1em 0;}
+
+               ul.related-items li.related-item > a{ float: right;
+                    &:before{content: "\f104"; font-size: 11px; font-weight: bold; margin: 0 3px 0 5px; vertical-align: 1px;}
+                    &:hover{ margin: 0 6px 0 5px; }
+               }
+          }
+          
+          // Category List
+          table.category thead tr th{text-align: right;}
+          div.categories-list ul{padding: 0 15px 0 0;
+                ul > li{
+                    &:after,&:before{left: auto;right: 0px;}
+                    &:before{left: auto;right: 1px;}
+               }
+          }
+          
+          //Archived Articles
+
+          // 5.Tags Component
+          div.tag-category{
+               ul.list_tags{
+                  li.items-row{.blog .items-row();
+                      .item{.blog .items-row .item();
+                         .item-image{ float: right ;}
+                      }                     
+                  }
+              }
+          }
+          
+          // Page Break
+          dl.tabs dt{float: right;}
+          
+          // Search Component
+          .search #searchForm .phrases-box input, .search #searchForm .only input{float: right;margin: 4px 0 0 5px;}
+          
+          // Smart Search Component
+          #advanced-search{text-align: right;
+               #finder-filter-window{
+                    ul#finder-filter-select-dates{
+                        li{ text-align: right;
+                            select.filter-date-operator, div.input-append{ }
+                            select.filter-date-operator{ display: inline-block; margin-right: 0px !important; margin-left: 5px;}
+                        }
+                    }
+                }
+          }
+
+          // Register Component
+          .registration .form-horizontal .control-label{text-align: right;}
+          .login .well .control-label label{ text-align: right;}
+          .reset,.remind{
+               .control-label{text-align: right;}
+          }
+
+          // Page Email & Print
+          &.contentpane #mailto-window .mailto-close{left: 20px;right: auto;}
+
+          //comp smartsearh
+         .finder #search-form #finder-search button.button i.icon-search{ margin-right: 0px; margin-left: 5px;}
+          
+     // 4.MODULE
+     // --------------------------------------------------
+     
+     /*MODULE JOOMLA DEFAULT*/
+          div.breadcrumbs div.modcontent ul.breadcrumb li{
+                a, span{ border-right: none; border-left: 1px dotted #ccc; }
+                .last{ border:none;}
+          }
+          //Mod finder
+          #mod-finder-searchform {
+               input.search-query{float: left;}
+               .btn{right: auto;left: 2px;}
+               input.inputbox{ background-position: right center;}
+               button.button{margin: 0 0px 0 4px;}
+          }
+
+          //Module login, resgister
+          .day-login{
+           ul.sj-login-regis{ float: left;}
+           #sj_login_form{float: left;}
+           .sj-day{ background-position: right center; padding: 0 23px 0 0px;}
+
+           /*---------Page Login popup--------*/
+          div.modal.fade.in{
+                    #sj_login_box .sj_box_content #login_form {
+                         .login_input{ float: right;}
+                         .link-forgot ul li a i{margin: 0 0px 0 5px;}
+                    }
+                    #sj_register_box .sj_box_content #member_registration .col-right{ float: right;}
+               }
+          }
+
+
+          // Basicnews Menu
+          div.mega-module a.more-news{padding: 0 15px 0 5px;}
+          a.more-news{ 
+               .icon-caret-right:before{ content: "\f0d9";}
+          }
+          //Mod Popular Tags
+          .tagspopular a{float: right;
+
+          }
+
+          // Last news
+          div.trending-news ul.latestnews li a{ float: left;}
+
+          //Who online
+          div.online .who-online{
+               .icon-group{ float: right;}
+               .online_content{ padding: 15px 15px 0px 0px;border-left:none; border-right-width: 2px; border-right-style: solid; border-right-color: rgba(255,255,255,0.5);}
+          } 
+          
+     /*MODULE  VARIATIONS*/
+     
+          // Mod Default Style          
+          
+          //Bg Style
+          
+          /* Icon Style */    
+          div[class*=" icon-"] h3.modtitle:before{ margin: 0 0 0 10px;}      
+          
+          /* Menu Style */
+          div._menu .modcontent ul.menu li{
+               &.active > a, &.active > .separator, &.active ul li > a{ background-position: right center; padding: 5px 12px 5px 0px;}
+          }
+          // badge style
+          div[class*=" badge-"] h3.modtitle span.badge{
+               right: -2px; left: auto;
+          }
+
+          
+     /* MODULE XHTML */
+          div.img-top{float: right;margin: 0 0 0 15px;}
+          ul.social{float: left;}
+          a.readon{
+               &:after{content: "\f0d9";}
+               &:hover{padding: 0 10px  0 0;}
+          }
+          .readmore{
+               //&:after{content: "\f056"; }
+          }
+          
+          // Mod video
+          div.video{
+           .more-video a{ background-position: right center; padding: 0 32px 0 0px;}
+           .video-row .video-header{
+               h3{text-align: right !important;}
+               button.close{ float: left;}
+           }
+          }
+          
+          // Mod news
+          div.sj-logo a {
+               span.text{float: right;}
+               span.slogan{ margin: 0 0 0 10px; float: right;}
+          }
+
+          div.backtop{ text-align: left;
+               .icon-sort-up:before{ right: -15px; left: auto;}
+          }
+
+          // Mod link_news
+          div.link_news{
+               .title{ float: right; margin: 0 0px 0 10px;
+                    &:after{ background-position: left -28px;}
+                    a{ float: right; padding: 0 6px 0 0;}
+               }
+               ul li{ float: right; background-position: left center;}
+               ul.follow li { padding: 0 15px 0 0;
+                    a{ padding: 0 33px 0 0px; background-position: right 0px;}
+                    &.twiter a{  background-position: right -34px;}
+                    &.rss a{  background-position: right -70px;}
+                    &.google a{  background-position: right -104px;}
+                    &.in a{  background-position: right -138px;}
+                    &.flick a{  background-position: right -173px;}
+               }
+           } 
+
+          // Mod Locations
+          div.localtions ul {
+               li{ padding: 0 45px 0 0;
+                    &:before{ left: auto; right: 0px;}
+               }
+          }
+          
+          //
+          div.newsletter span.button_right .button_left{ margin: 0 9px;}
+          
+     /* MODULE YT */
+          div.moduletabs.top-position div.tabs-container ul.tabs li{float: right;}
+          a.more-view:after{content: "\f053";}
+          .bsn-wrap .bsn-image{float: right;}
+          
+          //SJ-Extraslider
+          div.extra-slider{
+               .extraslider-control{ float: left;}
+               div.sj-extraslider .extraslider-inner .item .line .item-wrap.style1 .item-image{ float: right; margin: 0 0px 0 10px;}
+          }
+          
+          // Mod SJ meganew
+          div.mgi-wrap.theme2{
+               .mgi-box .mgi-item .item-wrap{ float: right; padding: 0 0% 0 2%;}
+          }
+
+          //Mod Sj content-accordion
+          div.yt-accordion{
+               .sj-accordion .acd-items .acd-item .acd-header{ padding: 3px 20px 3px 10px;
+                    &:before{ margin: 0 -15px 0 5px;float: right;}
+               }
+          }
+
+          //Mod sj ajax-tabs
+          div.ajax-tabs{
+               .sj-ajax-tabs.top-position .tabs-container ul.tabs{ right: 0px !important; left: auto;
+                li{ float: right; }
+               }
+               .tabs-content{ 
+                    .item-title,  .item-title a, .item-readmore{ text-align: right !important;}                   
+               }
+               .tab-content .ajax-loader{ margin-top: 80px; background-position: center center; padding: 0  0 !important; width: 100%;}
+          }
+
+          // Mod Sj News Splash
+          div.sj-splash{
+           .spl-title, .spl-items{ float: right;}
+           .spl-title .spl-title-inner{ padding: 0 0 0 10px;}
+           .spl-control ul.spl-control-inner{ left: 0px; right: auto;}
+           }
+
+           // Mode sj-slideshow
+          div.slideshow{
+               .sl-control ul.pag-list{ text-align: left;
+                    li{
+                         &.pag-item,&.pag-prev, &.pag-next{ float: none; display: inline-block;}
+                    }
+               }
+          }
+          div.slideshow.theme2{
+               .sl-control ul.pag-list{ float: left;
+                    li{
+                         &.pag-item,&.pag-prev, &.pag-next{ }
+                    }
+               }
+          }
+          .slideshow.theme1 .sl-control{ left: 0px; right: auto;
+                .pag-list{  left: 0px; right: auto;}
+          }
+          div.new-temp2 h3.modtitle{ padding: 25px 15px 10px 60px;}
+          div.new-temp1{
+           h3.modtitle{ padding: 10px 10px 6px 60px;}
+           div.slideshow.theme1 .sl-control{ left: 10px; right: auto;}
+          }
+
+          // Mod Basic news
+          a.see-all{ 
+               .icon-caret-right:before{ content: "\f0d9";}
+          }
+          div.bsn-wrap.theme2col{
+               .post .bsn-image{margin:5px 0px 5px 10px;}
+          } 
+
+          //Mod sj module-tabs
+          div.tab-news{
+               h3.modtitle{ padding: 10px 10px 10px 67%;}
+               div.moduletabs.top-position{
+                    .tabs-container{right: auto; left: 0px;}
+                    .tabs-content-wrap{
+                         .tabs-content{ padding: 5px 7px 5px 0px;}
+                    }
+               } 
+          }
+
+          //Mod sj article slider
+          
+          div.container-slider{
+               .page-button.top{
+                    .control-button .preview{ right: auto; left: 20px;}
+                    .control-button .next{ right: auto; left: 37px;}
+               }
+               .slider{ direction: ltr;
+                    .vpo-wrap .vp .item .item-wrap{ direction: rtl;
+                         .item-info{
+                              .item-title, .item-des, .item-read{text-align: right;}
+                         }
+                    }
+               } 
+          } 
+
+          // Mod sj sj_news_scrollbar
+          .sj_news_scrollbar .mCustomScrollBox{
+               > .mCSB_scrollTools{ right: auto; left: 0px;
+                    .mCSB_draggerRail{background-position: right 0;}
+               }
+               .mCSB_container{ margin-right: 0px; margin-left: 30px;
+                    .scrb-item .scrb-item-inner .scrb-image{float: right; margin: 3px 0px 5px 5px;}
+               }
+          }
+
+
+}

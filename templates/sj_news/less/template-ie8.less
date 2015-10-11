@@ -1,0 +1,98 @@
+/*******************************************
+***          YT Framework: less          ***  
+*******************************************/
+// Template variables
+@import "../asset/bootstrap/less/variables.less";
+@import "color/variables_color.less";
+
+//#bd{ display: none;}
+
+#bd .container, 
+#bd .navbar-static-top .container, 
+#bd .navbar-fixed-top .container, 
+#bd .navbar-fixed-bottom .container {width: 980px ;}
+
+.button{ border:none;}
+
+#bd #yt_menuwrap{
+      -ms-filter:none; filter:none; background:@backgroundMenuwrap;
+      #yt-mobilemenu{display: none;}
+      #yt_menuposition ul.navi li.level1{
+			border-left: 1px solid @borderSubnav1;
+			&.first{ border:none;}
+		}
+	  #yt_menuposition ul.navi li.level1 > .item-link{ padding:10px 14px; }
+ }
+ #bd.rtl #yt_menuwrap{      
+      #yt_menuposition ul.navi li.level1{
+			border-right: 1px solid @borderSubnav1;
+			border-left: none;
+			&.first{ border:none;}
+		}	  
+ }
+
+#mod-finder-searchform input.inputbox{ line-height: 20px;}
+
+#yt_spotlight5{min-height: 210px;}
+
+.yt-gallery ul li .item-gallery a h3.item-gallery-title{
+	background:none;
+	-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);
+	zoom: 1;
+}
+
+.item-page .image-overlay,
+.blog-featured .items-row .item .item-image .image-overlay,
+.blog .items-row .item .item-image .image-overlay{
+	
+}
+// dung ngc lai hover vao thi opacity la 100
+.item-page .img-fulltext:hover .image-overlay,
+.blog .items-leading .item .item-image:hover .image-overlay,
+.blog .items-row .item .item-image:hover .image-overlay{
+	background:none;
+	-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);
+	zoom: 1;
+}
+
+div.video .video-row .item .item-img,
+div.bgcolor.links .row-icon{
+	background:none;
+	-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7Fffffff,endColorstr=#7Fffffff);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7Fffffff,endColorstr=#7Fffffff);
+	zoom: 1;
+}
+div.video .video-row .item .item-img:hover{
+	background:  #CCCCCC;
+}
+
+div.sj-splash, div.breadcrumbs div.modcontent ul.breadcrumb{
+	border-bottom: 1px solid @grayLighter ;
+	border-bottom-color: #eeeeee !important;
+}
+
+div.container-slider .page-button.top .control-button{
+	.preview:hover{ background-position: 0 -37px !important;}
+	.next:hover{ background-position: right -37px !important;}
+} 
+
+#yt_spotlight3{
+	border-bottom: 2px solid @borderColor1;
+}
+div.slideshow.theme1 .sl-item-image{
+	background:none;
+	-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7Fffffff,endColorstr=#7Fffffff);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7Fffffff,endColorstr=#7Fffffff);
+	zoom: 1;
+}
+
+/* -- RTL Languages
+---------------------- */
+.rtl #yt_menuposition ul.navi li.level1{
+	border-right: 1px solid @borderSubnav1;
+}
+.rtl div.categories-list ul ul > li{overflow: visible;}
+
+div.sj-logo a span.slogan{ border:none;}

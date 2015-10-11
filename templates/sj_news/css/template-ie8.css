@@ -1,0 +1,92 @@
+#bd .container,
+#bd .navbar-static-top .container,
+#bd .navbar-fixed-top .container,
+#bd .navbar-fixed-bottom .container {
+  width: 980px;
+}
+.button {
+  border: none;
+}
+#bd #yt_menuwrap {
+  -ms-filter: none;
+  filter: none;
+  background: #00497c;
+}
+#bd #yt_menuwrap #yt-mobilemenu {
+  display: none;
+}
+#bd #yt_menuwrap #yt_menuposition ul.navi li.level1 {
+  border-left: 1px solid #335e85;
+}
+#bd #yt_menuwrap #yt_menuposition ul.navi li.level1.first {
+  border: none;
+}
+#bd #yt_menuwrap #yt_menuposition ul.navi li.level1 > .item-link {
+  padding: 10px 14px;
+}
+#bd.rtl #yt_menuwrap #yt_menuposition ul.navi li.level1 {
+  border-right: 1px solid #335e85;
+  border-left: none;
+}
+#bd.rtl #yt_menuwrap #yt_menuposition ul.navi li.level1.first {
+  border: none;
+}
+#mod-finder-searchform input.inputbox {
+  line-height: 20px;
+}
+#yt_spotlight5 {
+  min-height: 210px;
+}
+.yt-gallery ul li .item-gallery a h3.item-gallery-title {
+  background: none;
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);
+  zoom: 1;
+}
+.item-page .img-fulltext:hover .image-overlay,
+.blog .items-leading .item .item-image:hover .image-overlay,
+.blog .items-row .item .item-image:hover .image-overlay {
+  background: none;
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);
+  zoom: 1;
+}
+div.video .video-row .item .item-img,
+div.bgcolor.links .row-icon {
+  background: none;
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7Fffffff,endColorstr=#7Fffffff);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7Fffffff,endColorstr=#7Fffffff);
+  zoom: 1;
+}
+div.video .video-row .item .item-img:hover {
+  background: #CCCCCC;
+}
+div.sj-splash,
+div.breadcrumbs div.modcontent ul.breadcrumb {
+  border-bottom: 1px solid #eee;
+  border-bottom-color: #eeeeee !important;
+}
+div.container-slider .page-button.top .control-button .preview:hover {
+  background-position: 0 -37px !important;
+}
+div.container-slider .page-button.top .control-button .next:hover {
+  background-position: right -37px !important;
+}
+#yt_spotlight3 {
+  border-bottom: 2px solid #003A63;
+}
+div.slideshow.theme1 .sl-item-image {
+  background: none;
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7Fffffff,endColorstr=#7Fffffff);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7Fffffff,endColorstr=#7Fffffff);
+  zoom: 1;
+}
+.rtl #yt_menuposition ul.navi li.level1 {
+  border-right: 1px solid #335e85;
+}
+.rtl div.categories-list ul ul > li {
+  overflow: visible;
+}
+div.sj-logo a span.slogan {
+  border: none;
+}

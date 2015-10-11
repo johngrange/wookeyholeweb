@@ -1,0 +1,60 @@
+//
+// Layouts
+// --------------------------------------------------
+//Show mainmenu when not slideshow
+.no-slideshow #yt_wrapper #yt_menuwrap{margin-bottom: 10px;}
+
+
+     //1.Block Header
+     #yt_header{  
+          // Logo Site
+          #yt_logoposition{
+               h1{margin: 20px 0;
+                    a{display: inline-block;min-height: 37px;   }
+               }
+          }
+     }
+     
+     //2.Block Mainmenu
+     #yt_menuwrap{#gradient .vertical(@backgroundMenuwrap, darken(@backgroundMenuwrap,10%)); background-color: transparent; 
+          position: relative;height: 40px;margin: 0 0 10px;
+          #yt-mobilemenu{display: none;}
+     }
+     
+     //3.Block Slideshow
+     #yt_slideshow{position: relative; z-index: 9;}
+     
+     //4.Block Top
+    #top{ }
+     
+     //5.Block Main Content
+     #content{
+          #yt_component{margin-bottom: 15px;}
+          .span12.no-minheight{min-height: 0;}
+     }
+     
+     //6.Block Spotlight 
+     #yt_spotlight{}
+
+     #yt_spotlight1{ margin: 0 0 15px;}
+
+     #yt_spotlight3{border-top: 2px solid @black;
+          .box-shadow(inset 0px -6px 5px rgba(0,0,0,0.2)); //background: @backgroundSpotlight;    
+     }
+
+     //#yt_spotlight4{ background: @backgroundSpotlight;}
+
+     #yt_spotlight5{ //background: @backgroundSpotlight; 
+          padding-top: 15px;
+          div.module{background: url("../images/bg_spotlight.png") repeat scroll left top; margin: 0px;
+               h3.modtitle{ color: #ffffff;}
+               div.modcontent{ padding: 10px 15px 15px 15px; min-height: 135px;}
+          }
+     }
+
+     //7.Block Footer
+     #yt_footer{ color:#cccccc; 
+          #yt_copyrightposition{padding: 20px 0 25px;  font-size: 91.7%; text-align: center;
+               a{ color: @white;} 
+           }
+     }
