@@ -56,7 +56,7 @@ button,textarea,input,.module .menu li,.module_menu .menu li,#system-message dd.
 #wrapper,.main,.top,#footer{width:964px;}
 #wrapper,.main,.top,#mainwrap,#search,.top-menu,fieldset.userdata,fieldset.userdata input{margin:0 auto;background:url("../images/wrapper_bg.png") top center repeat-y; width: 960px; margin: 0 auto; padding: 0 5px;
 	}
-#page_bg{background:#F8F8F8 url("../images/page_bg_custom.png") top center repeat-x;margin: 0;}
+#page_bg{background:#F8F8F8 url("../images/page_bg.png") top center repeat-x;margin: 0;}
 
 
 .page{min-height:100%;}
@@ -71,7 +71,7 @@ button,textarea,input,.module .menu li,.module_menu .menu li,#system-message dd.
 .top .menu a span{line-height:25px;background:transparent url(../images/top_menu_l_bg.png) no-repeat top left;}
 .top .menu a span,#form-login-remember label,#sgmenu ul.menu li a span,fieldset.userdata input.button,button{cursor:pointer;}
 #header,.maincol_full,.maincol_w_left,.maincol_w_right,.maincol,fieldset.userdata,.module .search{position:relative;width: 955px;}
-#header{width:970px;height:202px;position:relative;background:url("../images/header_bg.png") no-repeat center top; margin: 0 auto;padding: 0 5px;
+#header{width:970px;height:202px;position:relative;background:url("../images/header_bg_custom.png") no-repeat center top; margin: 0 auto;padding: 0 5px;
 }
 
 #menusearch {

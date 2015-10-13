@@ -82,7 +82,7 @@ button,textarea,input,.module .menu li,.module_menu .menu li,#system-message dd.
 }
 
 #headerlogo {
-	background: url("../images/header_bg.jpg") no-repeat scroll center top transparent;
+	background: url("../images/header_bg_custom.jpg") no-repeat scroll center top transparent;
 	    display: block;
 	    height: 202px;
 	    width: 970px;
