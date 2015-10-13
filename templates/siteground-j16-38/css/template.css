@@ -82,10 +82,11 @@ button,textarea,input,.module .menu li,.module_menu .menu li,#system-message dd.
 }
 
 #headerlogo {
-	background: url("../images/header_bg_custom.jpg") no-repeat scroll center top transparent;
+	background: url("../images/header_bg_customa.jpg") no-repeat scroll center top transparent;
 	    display: block;
 	    height: 202px;
 	    width: 970px;
+	
 }
 
 #header h1{left:15px;top:136px;}
@@ -95,6 +96,7 @@ button,textarea,input,.module .menu li,.module_menu .menu li,#system-message dd.
 #header h1 a:hover,#header h1 a:visited,#header h1 a:link,#header h1 a{
 	color: #A6DCFF;
     font-family: Tahoma,Verdana,Arial,sans-serif;
+    font-weight: bold;
     font-size: 20px;
     letter-spacing: 1px;}
     
