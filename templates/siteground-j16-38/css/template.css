@@ -86,10 +86,11 @@ button,textarea,input,.module .menu li,.module_menu .menu li,#system-message dd.
 	    display: block;
 	    height: 202px;
 	    width: 970px;
+	    
 	
 }
 
-#header h1{left:15px;top:136px;}
+#header h1{left:15px;top:136px;z-index: 100;}
 .maincol{width:964px;}
 #header h1,#search,.top-menu,#breadcrumbs,.module .search .button,legend.element-invisible,#sgmenu ul li ul{position:absolute;}
 #header h1,td.hits{text-align:center;}
