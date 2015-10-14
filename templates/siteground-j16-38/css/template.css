@@ -71,7 +71,7 @@ button,textarea,input,.module .menu li,.module_menu .menu li,#system-message dd.
 .top .menu a span{line-height:25px;background:transparent url(../images/top_menu_l_bg.png) no-repeat top left;}
 .top .menu a span,#form-login-remember label,#sgmenu ul.menu li a span,fieldset.userdata input.button,button{cursor:pointer;}
 #header,.maincol_full,.maincol_w_left,.maincol_w_right,.maincol,fieldset.userdata,.module .search{position:relative;width: 955px;}
-#header{width:970px;height:202px;position:relative;background:url("../images/li_bg.jpg.png") repeat-y center top; margin: 0 auto;padding: 0 5px;
+#header{width:970px;height:202px;position:relative; margin: 0 auto;padding: 0 5px;
 }
 
 #menusearch {
