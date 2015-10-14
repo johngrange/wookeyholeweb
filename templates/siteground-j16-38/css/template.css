@@ -383,12 +383,18 @@ input.inputbox, textarea.inputbox  {background: #ebebeb; background: 1px solid #
     width: 44px;}
 
 .mod_events_latest_content a:visited {
-    font-size: 10px;
+    font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
 }
 .mod_events_latest_content a:link {
-    font-size: 10px;
+    font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.mod_events_latest_date {
+    font-size: 11px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
     color: black;
 }
