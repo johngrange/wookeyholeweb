@@ -300,7 +300,7 @@ table.weblinks td,table{border-collapse:collapse;}
 li.active a span, li a:hover span{
 	color: rgb(54, 88, 111);;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 22px;
     text-decoration: underline;}
 .feed{padding:5px !important;}
 body,button,textarea,input,#mod-search-searchword,#footer a,#footer p{color:#333333;}
