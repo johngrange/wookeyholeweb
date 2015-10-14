@@ -135,7 +135,7 @@ input.button{background:url("../images/search_btn.png") no-repeat scroll center 
     padding: 0;
     position: absolute;
     right: 0;
-    color: #999999;
+    color: #444444;
     font-family: Tahoma,Verdana,Arial,sans-serif;
     top: 0;
     width: 73px;}
@@ -196,7 +196,7 @@ fieldset.userdata input,.module .search .button,fieldset.userdata input.button,b
 
 .rightcol .module_menu,.rightcol .module,.leftcol .module_menu,.leftcol .module{margin-bottom:15px;}
 .rightcol h3,.leftcol h3{background: url("../images/h3.png") repeat-x scroll left top transparent;
-    color: #999999;
+    color: #444444;
     font-family: Tahoma,Verdana,Arial,sans-serif;
     font-size: 11px;
     font-weight: bold;
@@ -320,7 +320,7 @@ body,button,textarea,input,#mod-search-searchword,#footer a,#footer p{color:#737
 }
 
 
-h3,fieldset.userdata input,#modlgn-remember,.category-desc a:visited,.category-desc a:link,.category-desc a,.maincol .categories-module li,.maincol .relateditems li,.maincol .latestnews li,#article-index li,.maincol .menu li,#search .search .inputbox,#footer a{color:#999999;}
+h3,fieldset.userdata input,#modlgn-remember,.category-desc a:visited,.category-desc a:link,.category-desc a,.maincol .categories-module li,.maincol .relateditems li,.maincol .latestnews li,#article-index li,.maincol .menu li,#search .search .inputbox,#footer a{color:#444444;}
 .top .menu a span,.maincol_full,#sgmenu ul.menu li ul li a span,#sgmenu ul.menu li ul li a:hover span{padding:0 10px;}
 
 #login-form {
@@ -332,7 +332,7 @@ h3,fieldset.userdata input,#modlgn-remember,.category-desc a:visited,.category-d
 	
 .rightcol ul.menu li a:link,.rightcol ul.menu li a,.leftcol ul.menu li a:link,.leftcol ul.menu li a{
 	background: url("../images/menu_row.png") no-repeat scroll left center transparent;
-    color: #999999;
+    color: #444444;
    font-size: 11px;
    line-height: 18px;
    margin: 0;
@@ -343,7 +343,7 @@ h3,fieldset.userdata input,#modlgn-remember,.category-desc a:visited,.category-d
 
 #sgmenu ul.menu li a span {
 	background: url('../images/li_bg.png') bottom left no-repeat;
-	color: #999999;
+	color: #444444;
 	    float: left;
 	    font-family: Tahoma,Verdana,Arial,sans-serif;
 	    font-size: 12px;
@@ -360,7 +360,7 @@ h3,fieldset.userdata input,#modlgn-remember,.category-desc a:visited,.category-d
 	
 #footer {
 	background: url("../images/footer_bg.png") no-repeat scroll center top #F8F8F8;
-	   color: #999999;
+	   color: #444444;
 	   font-size: 11px;
 	   height: 100px;
 	   line-height: 20px;
