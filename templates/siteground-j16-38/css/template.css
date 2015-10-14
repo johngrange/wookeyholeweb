@@ -2,7 +2,7 @@ html,body{height:100%;}
 body,#contact-slider .panel,.tip-wrap,#sgmenu ul.menu li ul li a:hover span{background:#fff;}
 body{color: #444444;
     font-family: Arial,Tahoma,Verdana,sans-serif;
-    font-size: 10pt;
+    font-size: 14px;
     line-height: 1.3em;}
 body,ul,img,a,form,h3,dl dd,fieldset,.module p,#header h1,.maincol_w_left .cont,.maincol_w_right .cont,#login-form,#login-form ul li,ul.menu,.item .readmore,td p,#sgmenu ul.menu li a span,#system-message,#footer p,#contact-slider .panel h3,.pagination .counter,#form-login-remember,.module .menu,.module_menu .menu{margin:0;}
 body,ul,img,a,form,fieldset,#wrapper,#search .search,.rightcol,.leftcol,fieldset.userdata p,fieldset.userdata,ul.menu,.maincol h2 a,.maincol h2,#member-registration dd{padding:0;}
@@ -11,12 +11,12 @@ body,ul,img,a,form,fieldset,#wrapper,#search .search,.rightcol,.leftcol,fieldset
 ul{list-style:none;}
 img,a{outline:none;}
 img,a,iframe,fieldset,button,textarea,input,fieldset.userdata,.error,fieldset.userdata input.button,button{border:none;}
-a:focus,a:active,a:hover,a:visited,a:link,.rightcol h3,.leftcol h3{color:#6AADDC;font-family: Tahoma,Arial,sans-serif;}
+a:focus,a:active,a:hover,a:visited,a:link,.rightcol h3,.leftcol h3{color:#6AADDC;font-family: Arial,sans-serif;}
 
 
 .maincol h2 a,.maincol h2{
 	color: #6AADDC;
-    font-family: Tahoma,Arial,sans-serif;
+    font-family: Arial,sans-serif;
     font-size: 14px;
     margin: 0;
     padding: 0;
