@@ -17,7 +17,7 @@ a:focus,a:active,a:hover,a:visited,a:link,.rightcol h3,.leftcol h3{color:#6AADDC
 .maincol h2 a,.maincol h2{
 	color: #6AADDC;
     font-family: Arial,sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     margin: 0;
     padding: 0;
     text-align: left;	
@@ -299,7 +299,7 @@ table.weblinks td,table{border-collapse:collapse;}
 .leftcol ul.menu,.rightcol ul.menu{padding:5px 0 0 5px;}
 li.active a span, li a:hover span{
 	color: #6AADDC;
-    font-size: 11px;
+    font-size: 14px;
     line-height: 18px;
     text-decoration: underline;}
 .feed{padding:5px !important;}
