@@ -54,7 +54,7 @@ button,textarea,input,.module .menu li,.module_menu .menu li,#system-message dd.
 	position: relative;
 }
 #wrapper,.main,.top,#footer{width:964px;}
-#wrapper,.main,.top,#mainwrap,#search,.top-menu,fieldset.userdata,fieldset.userdata input{margin:0 auto;background:url("../images/wrapper_bg.png") top center repeat-y; width: 960px; margin: 0 auto; padding: 0 5px;
+#wrapper,.main,.top,#mainwrap,#search,.top-menu,fieldset.userdata,fieldset.userdata input{margin:0 auto;background:url("../images/wrapper_bg.png") top center repeat-y; width: 960px; margin: 0 auto; padding: 0 0px;
 	}
 #page_bg{background:rgb(86,112,1) url("../images/wrapper_bg.png") top center repeat-x;margin: 0;}
 
@@ -366,7 +366,7 @@ h3,fieldset.userdata input,#modlgn-remember,.category-desc a:visited,.category-d
 	   line-height: 20px;
 	   margin: 0 auto;
 	   text-align: center;
-	   width: 970px;
+	   width: 960px;
 }
 	
 input.inputbox, textarea.inputbox  {background: #ebebeb; background: 1px solid #a3a3a3; margin: 0 0 10px 0; color: #000;}
