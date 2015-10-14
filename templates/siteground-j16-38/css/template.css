@@ -11,11 +11,11 @@ body,ul,img,a,form,fieldset,#wrapper,#search .search,.rightcol,.leftcol,fieldset
 ul{list-style:none;}
 img,a{outline:none;}
 img,a,iframe,fieldset,button,textarea,input,fieldset.userdata,.error,fieldset.userdata input.button,button{border:none;}
-a:focus,a:active,a:hover,a:visited,a:link,.rightcol h3,.leftcol h3{color:#6AADDC;font-family: Arial,sans-serif;}
+a:focus,a:active,a:hover,a:visited,a:link,.rightcol h3,.leftcol h3{color:rgb(54, 88, 111);;font-family: Arial,sans-serif;}
 
 
 .maincol h2 a,.maincol h2{
-	color: #6AADDC;
+	color: rgb(54, 88, 111);;
     font-family: Arial,sans-serif;
     font-size: 16px;
     margin: 0;
@@ -27,7 +27,7 @@ a:focus,a:active,a:hover,a:visited,a:link,.rightcol h3,.leftcol h3{color:#6AADDC
 
 
 a:focus,a:active,a:hover,a:visited,a:link,.top .menu a,#header h1 a:hover,#header h1 a:visited,#header h1 a:link,#header h1 a,.rightcol ul.menu li a:link,.rightcol ul.menu li a,.leftcol ul.menu li a:link,.leftcol ul.menu li a,#sgmenu ul.menu li a span{text-decoration:none;}
-h6,h5,h4,h3,h2,h1{color:#6AADDC;font-family:Arial,Tahoma,Verdana,sans-serif;}
+h6,h5,h4,h3,h2,h1{color:rgb(54, 88, 111);;font-family:Arial,Tahoma,Verdana,sans-serif;}
 h6,h5,h4,h3,h2,h1,.category-desc p,#contact-slider .panel h3 a{line-height:normal;}
 h6,h5,h4,h3,h2,h1,.error{margin:5px 0;}
 h1{font-size:24px;}
@@ -241,7 +241,7 @@ legend.element-invisible{margin-left:-3000px;margin-top:-3000px;height:0;}
 .maincol .login label{width:100px;}
 
 #footer p a {
-	 color: #6AADDC !important;
+	 color: rgb(54, 88, 111); !important;
 }
 .error{background:#fdcdc9;}
 #system-message dt.warning{color:#be4e4c;font-size:16px;}
@@ -287,7 +287,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', end
 #sgmenu ul.menu li ul li a:hover{color:#9e3777;}
 fieldset.userdata input.button,button{
 	background: none repeat scroll 0 0 #8CCCF8;
-    border: 1px solid #6AADDC;
+    border: 1px solid rgb(54, 88, 111);;
     color: #FFFFFF;
     cursor: pointer;
     font-size: 10px;
@@ -298,9 +298,9 @@ table.weblinks td,table{border-collapse:collapse;}
 .innercol{width:66pxpx;display:block;overflow:hidden;margin:10px auto;}
 .leftcol ul.menu,.rightcol ul.menu{padding:5px 0 0 5px;}
 li.active a span, li a:hover span{
-	color: #6AADDC;
+	color: rgb(54, 88, 111);;
     font-size: 14px;
-    line-height: 22px;
+    line-height: 18px;
     text-decoration: underline;}
 .feed{padding:5px !important;}
 body,button,textarea,input,#mod-search-searchword,#footer a,#footer p{color:#333333;}
@@ -334,7 +334,7 @@ h3,fieldset.userdata input,#modlgn-remember,.category-desc a:visited,.category-d
 	background: url("../images/menu_row.png") no-repeat scroll left center transparent;
     color: #444444;
    font-size: 11px;
-   line-height: 22px;
+   line-height: 18px;
    margin: 0;
    padding: 0 0 0 10px;
    text-decoration: none;
