@@ -56,7 +56,7 @@ button,textarea,input,.module .menu li,.module_menu .menu li,#system-message dd.
 #wrapper,.main,.top,#footer{width:964px;}
 #wrapper,.main,.top,#mainwrap,#search,.top-menu,fieldset.userdata,fieldset.userdata input{margin:0 auto;background:url("../images/wrapper_bg.png") top center repeat-y; width: 960px; margin: 0 auto; padding: 0 5px;
 	}
-#page_bg{background:#F8F8F8 url("../images/wrapper_bg.png") top center repeat-x;margin: 0;}
+#page_bg{background:rgb(126,166,1) url("../images/wrapper_bg.png") top center repeat-x;margin: 0;}
 
 
 .page{min-height:100%;}
