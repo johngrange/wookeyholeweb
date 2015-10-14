@@ -303,7 +303,7 @@ li.active a span, li a:hover span{
     line-height: 18px;
     text-decoration: underline;}
 .feed{padding:5px !important;}
-body,button,textarea,input,#mod-search-searchword,#footer a,#footer p{color:#737373;}
+body,button,textarea,input,#mod-search-searchword,#footer a,#footer p{color:#333333;}
 
 
 #footer a,#footer p{
