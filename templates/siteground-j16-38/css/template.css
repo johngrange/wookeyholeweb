@@ -300,7 +300,7 @@ table.weblinks td,table{border-collapse:collapse;}
 li.active a span, li a:hover span{
 	color: #6AADDC;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 22px;
     text-decoration: underline;}
 .feed{padding:5px !important;}
 body,button,textarea,input,#mod-search-searchword,#footer a,#footer p{color:#333333;}
@@ -334,7 +334,7 @@ h3,fieldset.userdata input,#modlgn-remember,.category-desc a:visited,.category-d
 	background: url("../images/menu_row.png") no-repeat scroll left center transparent;
     color: #444444;
    font-size: 11px;
-   line-height: 18px;
+   line-height: 22px;
    margin: 0;
    padding: 0 0 0 10px;
    text-decoration: none;
