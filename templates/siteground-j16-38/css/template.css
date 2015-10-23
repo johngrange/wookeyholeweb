@@ -399,7 +399,6 @@ input.inputbox, textarea.inputbox  {background: #ebebeb; background: 1px solid #
     color: #333333;
 }
 
-#latestarticles ul {
-	height: 14px;
-	line-height: 19px;
+ul.latestnews {
+    line-height: 20px;
 }
