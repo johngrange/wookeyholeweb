@@ -398,3 +398,8 @@ input.inputbox, textarea.inputbox  {background: #ebebeb; background: 1px solid #
     font-family: Arial, Helvetica, sans-serif;
     color: #333333;
 }
+
+#latestarticles ul {
+	height: 14px;
+	line-height: 19px;
+}
